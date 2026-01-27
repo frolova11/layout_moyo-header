@@ -1,3 +1,65 @@
-body {
+:root {
+  --color-blue: #00acdc;
+}
+.body {
   margin: 0;
+  font-family: Roboto, Arial, sans-serif;
+  font-weight: 500;
+  font-size: 12px;
+  letter-spacing: 0;
+}
+.header {
+    display: flex;
+    padding: 0 50px;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav a {
+    text-transform: uppercase;
+    color: inherit;
+    white-space: nowrap;
+    outline: none;
+    text-decoration: none;
+    font-size: 12px;
+    position: relative;
+    display: block;
+    line-height: 60px;
+}
+
+.nav__link:hover {
+    color: var(--blue, #00acdc);
+}
+
+.nav__list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    margin: 0;
+    gap: 20px;
+}
+.nav__list .nav__item:not(:last-child) .nav__link {
+  margin-right: 20px;
+}
+.nav__link.is-active {
+  color: var(--color-blue);
+}
+.is-active:after {
+    content: "";
+    background-color: var(--blue, #00acdc);
+    border-radius: 2px;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.logo {
+    display: block;
+}
+.nav.navbar {
+  text-transform: uppercase;
+}
+.nav__item:not(:last-child) {
+    margin-right: 20px;
 }
