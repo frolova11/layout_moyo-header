@@ -1,6 +1,7 @@
 :root {
   --color-blue: #00acdc;
 }
+
 .body {
   margin: 0;
   font-family: Roboto, Arial, sans-serif;
@@ -8,12 +9,14 @@
   font-size: 12px;
   letter-spacing: 0;
 }
+
 .header {
     display: flex;
     padding: 0 50px;
     justify-content: space-between;
     align-items: center;
 }
+
 .nav__link {
     text-transform: uppercase;
     color: inherit;
@@ -37,13 +40,16 @@
     margin: 0;
     margin-right: 20px;
 }
+
 .nav__list .nav__item:not(:last-child) .nav__link {
   margin-right: 20px;
 }
+
 .nav__link.is-active {
   color: var(--color-blue);
 }
-.is-active:after {
+
+.is-active::after {
     content: "";
     background-color: var(--color-blue);
     border-radius: 2px;
@@ -57,9 +63,11 @@
 .logo {
     display: block;
 }
+
 .nav.navbar {
   text-transform: uppercase;
 }
+
 .nav__item:not(:last-child) {
     margin-right: 20px;
 }
